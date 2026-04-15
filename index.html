@@ -4,28 +4,29 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Meeting minutes for a sample team meeting"
+      content="Meeting minutes for the Nimbus Timer kickoff session"
     />
-    <title>Pomodoro Timer First Brainstorm</title>
+    <title>Nimbus Timer Kickoff</title>
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <header>
-      <h1>Pomodoro Timer First Brainstorm</h1>
-      <h2>Brainstorming Meeting</h2>
-      <p>Date: April 14, 2026</p>
+      <h1>Nimbus Timer — Kickoff</h1>
+      <h2>Initial Brainstorm & Roadmap</h2>
+      <p><time datetime="2026-04-14">April 14, 2026</time></p>
     </header>
 
     <hr />
 
     <nav>
-      <ul>
+      <ol>
         <li><a href="#attendance">Attendance</a></li>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#unfinished">Unfinished Business</a></li>
         <li><a href="#new">New Business</a></li>
+        <li><a href="#media">Media</a></li>
         <li><a href="#misc">Misc</a></li>
-      </ul>
+      </ol>
     </nav>
 
     <main>
@@ -34,9 +35,11 @@
 
         <div>
           <p>
-            <strong>Present:</strong> Adithya, <span>Alex</span>, Jamie, Chris
+            <strong>Present:</strong>
+            <span>Riley Park</span>, <span>Sora Kim</span>,
+            <span>Kai Patel</span>, <span>Maya Cruz</span>
           </p>
-          <p><b>Absent:</b> Taylor</p>
+          <p><b>Absent:</b> Jordan Ellis</p>
         </div>
 
         <p>
@@ -92,24 +95,24 @@
       </section>
 
       <section id="media">
-        <h2>Meeting Media</h2>
+        <h2 id="media">Meeting Media</h2>
 
         <h3>Whiteboard Diagram</h3>
         <img
-          src="diagram.png"
+          src="screenshots/example.png"
           alt="Whiteboard diagram of app ideas"
-          width="300"
+          width="360"
         />
 
-        <h3>Audio Recording</h3>
+        <h3>Audio Recording (separate file)</h3>
         <audio controls>
-          <source src="audio.mp3" type="audio/mpeg" />
+          <source src="media/meeting-audio.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
 
         <h3>Video Recording</h3>
-        <video width="320" height="240" controls>
-          <source src="video.mp4" type="video/mp4" />
+        <video width="480" height="270" controls>
+          <source src="media/meeting-video.mp4" type="video/mp4" />
           Your browser does not support the video element.
         </video>
       </section>
@@ -127,7 +130,7 @@
       </section>
     </main>
 
-    <form>
+    <form action="#" method="get">
       <fieldset>
         <legend>Quick Feedback Form</legend>
 
@@ -180,12 +183,12 @@
           <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
         </p>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Submit Feedback</button>
       </fieldset>
     </form>
 
     <footer>
-      <p>Created by Adithya</p>
+      <p>Created by the Nimbus Team</p>
     </footer>
   </body>
 </html>
