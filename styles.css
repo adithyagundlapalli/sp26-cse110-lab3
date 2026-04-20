@@ -161,3 +161,98 @@ main {
     padding-left: 0;
   }
 }
+
+/* more required css */
+div {
+  background-color: rgba(10, 20, 40, 0.08);
+}
+
+main {
+  background-color: color-mix(in srgb, navy 80%, white 20%);
+}
+
+footer {
+  color: color(display-p3 0.1 0.1 0.1 / 1);
+}
+
+section {
+  min-width: 250px;
+}
+
+video {
+  height: 270px;
+}
+
+audio {
+  width: 300px;
+}
+
+summary {
+  display: inline;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+}
+
+details {
+  display: block;
+}
+
+form {
+  margin-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+fieldset {
+  margin: auto;
+  padding: 1rem 2rem;
+  border: 2px solid navy;
+  border-radius: 8px;
+}
+
+nav {
+  position: relative;
+}
+
+footer {
+  position: static;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.2in;
+}
+
+main section {
+  font-size: 1.1em;
+}
+
+header p {
+  margin-bottom: 12pt;
+}
+
+/* flex + grid */
+nav ol {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#media {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 20px;
+}
