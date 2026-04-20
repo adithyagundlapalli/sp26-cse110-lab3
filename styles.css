@@ -137,3 +137,27 @@ main {
     max-width: 800px;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  img,
+  video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  nav ol {
+    text-align: center;
+    padding-left: 0;
+  }
+}
