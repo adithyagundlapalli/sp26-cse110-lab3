@@ -132,10 +132,8 @@ section:has(img) {
   background-color: #f8fbff;
 }
 
-main {
-  & section {
-    max-width: 800px;
-  }
+main section {
+  max-width: 800px;
 }
 
 @media (max-width: 768px) {
@@ -172,7 +170,7 @@ main {
 }
 
 footer {
-  color: color(display-p3 0.1 0.1 0.1 / 1);
+  color: #111;
 }
 
 section {
