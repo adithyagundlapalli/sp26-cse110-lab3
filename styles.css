@@ -1,8 +1,84 @@
+/* simple theme */
+:root {
+  --navy: #1a2a4f;
+  --text: #111;
+  --bg: #f4f4f4;
+}
+
 body {
-  background-color: gray;
+  background-color: var(--bg, white);
+  color: var(--text, black);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center; /* center text */
+}
+
+/* header */
+header {
+  background-color: var(--navy);
+  color: white;
+  padding: 15px;
+}
+
+/* headings */
+h1 {
+  margin: 0;
+}
+
+h2 {
+  color: var(--navy);
+  margin-top: 20px;
+}
+
+/* center sections */
+section {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  width: 70%;
+}
+
+/* text */
+p {
+  margin-bottom: 10px;
+}
+
+/* nav */
+nav ol {
+  padding: 10px;
+  list-style-position: inside;
+}
+
+/* links */
+a {
+  color: var(--navy);
+}
+
+a:hover {
   color: black;
 }
 
-h1 {
-  color: navy;
+/* images */
+img {
+  width: 50%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto; /* center image */
+}
+
+/* button */
+button {
+  background-color: var(--navy);
+  color: white;
+  padding: 5px;
+}
+
+button:active {
+  background-color: black;
+}
+
+/* footer */
+footer {
+  margin: 20px;
 }
