@@ -8,9 +8,9 @@
 body {
   background-color: var(--bg, white);
   color: var(--text, black);
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
-  text-align: center; /* center text */
+  text-align: center;
 }
 
 /* header */
@@ -18,6 +18,12 @@ header {
   background-color: var(--navy);
   color: white;
   padding: 15px;
+  /* wider-gamut color() example for border color (assignment requirement) */
+  border: 4px solid;
+  /* fallback for older browsers */
+  border-color: var(--navy);
+  /* wider-gamut color() overrides when supported */
+  border-color: color(display-p3 0.1 0.2 0.4);
 }
 
 /* headings */
@@ -53,6 +59,7 @@ nav ol {
 /* links */
 a {
   color: var(--navy);
+  text-decoration: underline;
 }
 
 a:hover {
@@ -81,6 +88,8 @@ button:active {
 /* footer */
 footer {
   margin: 20px;
+  /* hsl() example for a soft footer background */
+  background-color: hsl(210 30% 95%);
 }
 
 /* selectors */
@@ -121,7 +130,7 @@ input[type="text"] {
 h1,
 h2,
 h3 {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 section.highlight {
@@ -253,4 +262,18 @@ nav ol {
   grid-template-columns: 1fr;
   justify-items: center;
   row-gap: 20px;
+}
+
+/* nested selector example (newer CSS nesting syntax) */
+section {
+  h3 {
+    color: navy;
+    font-weight: 600;
+  }
+}
+
+/* fallback for browsers that don't support CSS nesting */
+section h3 {
+  color: navy;
+  font-weight: 600;
 }
